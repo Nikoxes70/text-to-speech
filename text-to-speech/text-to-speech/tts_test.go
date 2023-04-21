@@ -1,7 +1,6 @@
 package tts
 
 import (
-	"fmt"
 	"log"
 	"os"
 	"testing"
@@ -12,12 +11,10 @@ import (
 func TestTTS_Translate(t *testing.T) {
 	tts := New()
 	aa := "Niko is a god"
-	l, s, err := tts.CreateTranslate(aa)
-	println("SIZE " + (fmt.Sprint(len(aa))))
+	l, _, err := tts.CreateTranslate(aa)
 	if err != nil {
 		t.Errorf("Failed to transalte text: %s, with err: %s", l, err)
 	}
-	print(s)
 	mplayer := handlers.MPlayer{}
 	err = mplayer.Play(l)
 	if err != nil {
