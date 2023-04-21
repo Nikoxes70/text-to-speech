@@ -3,15 +3,15 @@
 ## Requirement:
 
 ### mplayer
-#### Install
+#### Install with Homebrew
 
 ```text
-$ go get "github.com/hegedustibor/htgo-tts"
+$ brew install mplayer     
 ```
 
-# Quickstart
+## Quickstart
 
-## CLI
+### CLI
 ```text
 $ cd text-to-speech-go/tts/cli
 $ go build
