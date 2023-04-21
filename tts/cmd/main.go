@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 	"net/http"
-	"shorten-url-go/text-to-speech/managing"
-	tts "shorten-url-go/text-to-speech/text-to-speech"
+	"shorten-url-go/tts/managing"
+	tts "shorten-url-go/tts/text-to-speech"
 )
 
 func main() {
